@@ -33,7 +33,7 @@ jobs:
 
           # Connect to Tailscale network
           Start-Sleep -Seconds 5
-          & "C:\Program Files\Tailscale\tailscale.exe" up  --authkey="$Env:TAILSCALE_AUTHKEY"  --hostname="github-rdp-server" --advertise-exit-node  --ssh=true
+          & "C:\Program Files\Tailscale\tailscale.exe" up  --authkey="$Env:TAILSCALE_AUTHKEY"  --hostname="github-rdp-server" --advertise-exit-node
           Start-Sleep -Seconds 8
 
           # Get Tailscale IP
